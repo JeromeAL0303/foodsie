@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn More</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header style="background-color: #00380e">
+      <img
+        class="foodsie"
+        src="./assets/foodsie.png"
+        alt="Foodsie Brand Image"
+      />
+      <nav class="nav-learnMore">
+        <div class="backHomeLearnMore">
+          <img
+            class="navBackArrow"
+            src="./assets/back-arrow.png"
+            alt="Back Arrow Image"
+            onclick="window.location.href='index.html'"
+          />
+          <a href="index.html">Home</a>
+        </div>
+
+        <input
+          class="btn-HeaderSignUp"
+          type="button"
+          value="Signup"
+          onclick="signupPage()"
+        />
+
+        <input
+          class="btn-login"
+          type="button"
+          value="Login"
+          onclick="loginPage()"
+        />
+      </nav>
+
+      <img class="menus" src="./assets/menus.png" alt="Menu Bar Image" />
+    </header>
+
+    <div class="navBar">
+      <div class="backHomeLearnMore">
+        <img
+          class="navBackArrow"
+          src="./assets/back-arrow.png"
+          alt="Back Arrow Image"
+        />
+        <a href="index.html">Home</a>
+      </div>
+
+      <div>
+        <div class="flex-btnSignup">
+          <input
+            class="btn-HeaderSignUp"
+            type="button"
+            value="Signup"
+            onclick="signupPage()"
+          />
+        </div>
+
+        <div class="flex-btnLogin">
+          <input
+            class="btn-login"
+            type="button"
+            href="#"
+            value="Login"
+            onclick="loginPage()"
+          />
+        </div>
+      </div>
+    </div>
+
+    <section class="loginPage">
+      <div class="flex-loginPage">
+        <div class="grid-loginPage">
+          <div class="loginPageImage">
+            <img
+              class="lecheplan"
+              src="./assets/lecheFlan.jpg"
+              alt="Letche Plan Image"
+            />
+          </div>
+          <div class="flex-loginForm">
+            <div class="backIconLogin">
+              <img
+                class="backIconImageLogin"
+                src="./assets/back-arrow.png"
+                alt="Back Icon Image"
+              />
+              <p>Back</p>
+            </div>
+
+            <div class="loginPageForm">
+              <h2>Login</h2>
+              <form
+                name="loginForm"
+                action="example.php"
+                onsubmit="return validateLogin()"
+              >
+                <label>Email</label> <br />
+                <input
+                  class="input"
+                  type="text"
+                  name="email"
+                  placeholder="Email"
+                />
+                <br />
+                <label>Password</label> <br />
+                <input
+                  class="input"
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                />
+                <br />
+                <a class="hyperlinkForm" href="#">Forget Password?</a>
+                <div class="btn-submit">
+                  <input
+                    class="btn-signupForm"
+                    type="submit"
+                    name="signup"
+                    value="Signup"
+                  />
+                  <input
+                    class="btn-loginForm"
+                    type="submit"
+                    name="login"
+                    value="Login"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="signupPage">
+      <div class="flex-signupPage">
+        <div class="grid-signupPage">
+          <div class="signupPageImage">
+            <img
+              class="lecheplan"
+              src="./assets/lecheFlan.jpg"
+              alt="Letche Plan Image"
+            />
+          </div>
+          <div class="flex-signupForm">
+            <div class="backIconSignUp">
+              <img
+                class="backIconImageSignUp"
+                src="./assets/back-arrow.png"
+                alt="Back Icon Image"
+              />
+              <p>Back</p>
+            </div>
+
+            <div class="signupPageForm">
+              <h2>Sign Up</h2>
+              <form
+                name="signupForm"
+                action="example.php"
+                onsubmit="return validateSignUp()"
+              >
+                <label>Email</label> <br />
+                <input
+                  class="input"
+                  type="text"
+                  name="email"
+                  placeholder="Email"
+                />
+                <br />
+                <label>Password</label> <br />
+                <input
+                  class="input"
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                />
+                <br />
+                <a class="hyperlinkForm" href="#">Forget Password?</a>
+                <div class="btn-submit">
+                  <input
+                    class="btn-signupForm"
+                    type="submit"
+                    name="signup"
+                    value="Signup"
+                  />
+                  <input
+                    class="btn-loginForm"
+                    type="submit"
+                    name="login"
+                    value="Login"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-catDancing">
+      <img
+        class="cat-dancing"
+        src="./assets/cat-dancing.gif"
+        alt="Cat Dancing Meme Image"
+      />
+    </section>
+
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>

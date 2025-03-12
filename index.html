@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice 9</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        class="foodsie"
+        src="./assets/foodsie.png"
+        onclick="window.location.href='#'"
+        alt="Foodsie Brand Image"
+      />
+      <nav>
+        <a href="#">Home</a>
+        <a href="#showcase">Showcase</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <input
+          class="btn-login"
+          type="button"
+          value="Login"
+          onclick="loginPage()"
+        />
+      </nav>
+
+      <img class="menus" src="./assets/menus.png" alt="Menu Bar Image" />
+    </header>
+
+    <div class="navBar">
+      <div class="flex-navBar">
+        <a href="#">Home</a>
+        <a href="#showcase">Showcase</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="flex-btnLogin">
+        <input
+          class="btn-login"
+          type="button"
+          href="#"
+          value="Login"
+          onclick="loginPage()"
+        />
+      </div>
+    </div>
+
+    <section class="loginPage">
+      <div class="flex-loginPage">
+        <div class="grid-loginPage">
+          <div class="loginPageImage">
+            <img
+              class="lecheplan"
+              src="./assets/lecheFlan.jpg"
+              alt="Letche Plan Image"
+            />
+          </div>
+          <div class="flex-loginForm">
+            <div class="backIconLogin">
+              <img
+                class="backIconImageLogin"
+                src="./assets/back-arrow.png"
+                alt="Back Icon Image"
+              />
+              <p>Back</p>
+            </div>
+
+            <div class="loginPageForm">
+              <h2>Login</h2>
+              <form
+                name="loginForm"
+                action="example.php"
+                onsubmit="return validateLogin()"
+              >
+                <label>Email</label> <br />
+                <input
+                  class="input"
+                  type="text"
+                  name="email"
+                  placeholder="Email"
+                />
+                <br />
+                <label>Password</label> <br />
+                <input
+                  class="input"
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                />
+                <br />
+                <a class="hyperlinkForm" href="#">Forget Password?</a>
+                <div class="btn-submit">
+                  <input
+                    class="btn-signupForm"
+                    type="submit"
+                    name="signup"
+                    value="Signup"
+                  />
+                  <input
+                    class="btn-loginForm"
+                    type="submit"
+                    name="login"
+                    value="Login"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="signupPage">
+      <div class="flex-signupPage">
+        <div class="grid-signupPage">
+          <div class="signupPageImage">
+            <img
+              class="lecheplan"
+              src="./assets/lecheFlan.jpg"
+              alt="Letche Plan Image"
+            />
+          </div>
+          <div class="flex-signupForm">
+            <div class="backIconSignUp">
+              <img
+                class="backIconImageSignUp"
+                src="./assets/back-arrow.png"
+                alt="Back Icon Image"
+              />
+              <p>Back</p>
+            </div>
+
+            <div class="signupPageForm">
+              <h2>Sign Up</h2>
+              <form
+                name="signupForm"
+                action="example.php"
+                onsubmit="return validateSignUp()"
+              >
+                <label>Email</label> <br />
+                <input
+                  class="input"
+                  type="text"
+                  name="email"
+                  placeholder="Email"
+                />
+                <br />
+                <label>Password</label> <br />
+                <input
+                  class="input"
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                />
+                <br />
+                <a class="hyperlinkForm" href="#">Forget Password?</a>
+                <div class="btn-submit">
+                  <input
+                    class="btn-signupForm"
+                    type="submit"
+                    name="signup"
+                    value="Signup"
+                  />
+                  <input
+                    class="btn-loginForm"
+                    type="submit"
+                    name="login"
+                    value="Login"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="home" class="home">
+      <div class="moonImage">
+        <img class="moon" src="./assets/moon.png" alt="Moon Image" />
+      </div>
+
+      <div class="frontText">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate
+          earum unde maxime, laudantium, ab adipisci, neque consequatur cumque
+          labore magni ipsam deleniti iure at vero ad animi atque amet? Laborum?
+        </p>
+        <div class="btn-link">
+          <input
+            class="btn-signup"
+            type="button"
+            value="Signup"
+            onclick="signupPage()"
+          />
+          <input
+            class="btn-learnMore"
+            type="button"
+            value="Learn more"
+            onclick="window.location.href='learnMore.html'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="showcase" class="showcase">
+      <div class="div-marquee">
+        <div class="div-image">
+          <img
+            class="image"
+            src="./assets/bicolExpress.jpg"
+            alt="Bicol Express Image"
+          />
+        </div>
+
+        <div class="div-image">
+          <img class="image" src="./assets/sinigang.jpg" alt="Sinigang Image" />
+        </div>
+
+        <div class="div-image">
+          <img
+            class="image"
+            src="./assets/friedChicken.jpg"
+            alt="Fried Chicken Image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="flex-about">
+        <h2>About</h2>
+        <div class="grid-about">
+          <div class="div-pictureAbout_1">
+            <img
+              class="childhood"
+              src="./assets/childhood.jpg"
+              alt="Jerome Child Image"
+            />
+          </div>
+
+          <div class="div-pictureAbout_2">
+            <img
+              class="ambition"
+              src="./assets/ambition.png"
+              alt="Formal Shirt Image"
+            />
+          </div>
+
+          <div class="div-paragraphAbout_1">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id ab
+              suscipit, voluptas libero velit voluptatum at harum corrupti
+              tempore laborum, eaque animi tempora dolorum in ipsam deleniti
+              quos, sequi rem!
+            </p>
+          </div>
+
+          <div class="div-paragraphAbout_2">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod sed
+              voluptatem odio maxime sunt voluptatibus, officiis velit adipisci
+              iure, nulla obcaecati dolore! Porro, odio? Tempore perferendis
+              quam facere temporibus? Accusamus!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="flex-contact">
+        <div class="grid-contact">
+          <div class="contactImage">
+            <img
+              class="picture1"
+              src="./assets/Picture1.png"
+              alt="Contact Brand Image"
+            />
+          </div>
+          <div class="contactDetail">
+            <div>
+              <h2 class="getInTouch">Get in touch</h2>
+              <p>Number: 09123456789</p>
+              <p>Email: example@gmail.com</p>
+              <p>Facebook: User</p>
+            </div>
+          </div>
+        </div>
+        <footer>@foodie</footer>
+      </div>
+    </section>
+
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
